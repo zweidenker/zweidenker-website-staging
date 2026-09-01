@@ -1,0 +1,1 @@
+import"./hoisted.DZwtMZgc.js";const c=document.querySelectorAll(".project-filter"),o=document.querySelectorAll("[data-categories]");c.forEach(e=>{e.addEventListener("click",()=>{const r=e.dataset.filter??"*";c.forEach(t=>t.setAttribute("aria-pressed",String(t===e))),o.forEach(t=>{const s=(t.dataset.categories??"").split("|");t.hidden=r!=="*"&&!s.includes(r)})})});
